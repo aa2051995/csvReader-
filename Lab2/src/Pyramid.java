@@ -1,21 +1,21 @@
 
 public class Pyramid {
-private String Pharaoh;
-private String Ancient_name;	
-private String Modern_name	;
-private double Dynasty;
-private String Site;	
-private double Base1	;
-private double Base2	;
-private double Height;
-private double Slope_dec_degr;
-private double Volume;
-private double latitude;
-private double Longitude;
-private String Type;
-private String Lepsius;
-private String Material;
-private String Comment;
+	private String Pharaoh;
+	private String Ancient_name;	
+	private String Modern_name	;
+	private double Dynasty;
+	private String Site;	
+	private double Base1	;
+	private double Base2	;
+	private double Height;
+	private double Slope_dec_degr;
+	private double Volume;
+	private double latitude;
+	private double Longitude;
+	private String Type;
+	private String Lepsius;
+	private String Material;
+	private String Comment;
 public Pyramid(String l_Pharaoh, String l_Ancient_name,
 		String l_Modern_name, double l_Dynasty, String l_Site,	
         double l_Base1,double l_Base2, double l_Height,
@@ -47,10 +47,12 @@ public String getPharaoh() {
 @Override
 	public String toString() {
 		
-		return getPharaoh() + "," +
-			   getAncient_name() + "," +
+		return getPharaoh() + 
+				"," +
+	   getAncient_name() + "," +
 			   getModern_name() + " ," + getDynasty()+" "+
-			   getHeight() + " ," + getLepsius() + ", "+getBase1()
+		 getHeight()
+		+ " ," + getLepsius() + ", "+getBase1()
 			   + getBase2()+", " + getSite() + ", "+ getComment();
 	}
 public void setPharaoh(String pharaoh) {
